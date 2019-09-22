@@ -17,7 +17,6 @@ namespace Calc
         {
             InitializeComponent();
         }
-        textBox1.Text = "Hello World";
         Operand operand = new Operand();
         Int32 subResult;
         String action;

@@ -44,6 +44,7 @@
             this.multi = new System.Windows.Forms.Button();
             this.division = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ce = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // number1
@@ -206,11 +207,22 @@
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
+            // ce
+            // 
+            this.ce.Location = new System.Drawing.Point(13, 126);
+            this.ce.Name = "ce";
+            this.ce.Size = new System.Drawing.Size(75, 23);
+            this.ce.TabIndex = 16;
+            this.ce.Text = "CE";
+            this.ce.UseVisualStyleBackColor = true;
+            this.ce.Click += new System.EventHandler(this.Ce_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(339, 158);
+            this.Controls.Add(this.ce);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.division);
             this.Controls.Add(this.multi);
@@ -253,6 +265,7 @@
         private System.Windows.Forms.Button multi;
         private System.Windows.Forms.Button division;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button ce;
     }
 }
 
